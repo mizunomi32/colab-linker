@@ -1,0 +1,12 @@
+{
+  "name": "colab linker",
+  "description": "GitHub上のnotebookにgoogle colabへのリンク追加",
+  "version": "0.1",
+  "manifest_version": 2,
+  "content_scripts": [{
+    "matches": ["https://github.com/*"],
+    "js": ["jquery-3.3.1.min.js","script.js"]
+  }],
+  "web_accessible_resources": [
+   "images/*.svg"]
+}
